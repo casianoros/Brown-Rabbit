@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+$textFont:'EB Garamond', serif;;
+$textColor:white;
+$navBgColor:linear-gradient(to right, black , #262728);
+$dateColor:#59a5cc;
+$textGreyColor:#555555;
+body,html{
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+nav{
+	display: flex;
+	height: 150px;
+	width: 100%;
+	background-color: black; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, black , #262728); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, black, #262728); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, black, #262728);
+	background: linear-gradient(to right, black , #262728);
+	justify-content: center;
+}
+.beforeContainer{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	flex-flow: column;
+}
+.container{
+	display: flex;
+	width: 95%;
+	height: 100%;
+	justify-content: center;
+}
+.l_insideNav{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	width: 45%;
+	height: 100%;
+}
+.r_insideNav{
+	display: flex;
+	width: 55%;
+	height: 100%;
+}
+.top_logoSpliter{
+	display: flex;
+	height: auto;
+	width: auto;
+	flex-flow: row;
+}
+.add_column{
+	flex-flow: column!important;
+}
+.searchForm{
+	display: flex;
+	width: 100%;
+	height: 50%;
+}
+.searchFormPositioning{
+	display: flex;
+	width: 50%;
+	height: 100%;
+}
+.linksList{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 50%;
+}
+.searchFormInput{
+	display: flex;
+	height: 100%;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10%;
+}
+.searchInput{
+	display: flex;
+	height: 25px;
+	border: none;
+	border-radius: 20px;
+	font-family: $textFont;
+	padding-left: 10px;
+}
+input.empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 12px;
+}
+.firstMenu{
+	display: flex;
+	width:100%;
+	height: 200px;
+	background: #111213;
+	justify-content: center;
+}
+.menuStructure{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	flex-flow: row;
+}
+.leftStructure{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70%;
+	height:100%;
+}
+.rightStructure{
+	display: flex;
+	justify-content: center;
+	width: 30%;
+	height:100%;
+}
+.secondMenu{
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	width: 100%;
+	height: 700px;
+}
+.leftStructureSecondMenu{
+	display: flex;
+	flex-flow: column;
+	width: 80%;
+	margin-left:2%;
+	height:100%;
+}
+.rightStructureSecondMenu{
+	display: flex;
+	align-items: center;
+	flex-flow: column;
+	background: #e8e8e8; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#e8e8e8, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#e8e8e8, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#e8e8e8, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#e8e8e8, white);
+	width: 20%;
+	height:100%;
+}
+.secondMenuItem{
+	display: flex;
+	justify-content: center;
+	width: 90%;
+	height: 200px;
+}
+.secondMenuItemSpace{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	height: 20px;
+}
+.insideItemLeft{
+	display: flex;
+	align-items: center;
+	width: 25%;
+	height: 100%;
+}
+.insideItemRight{
+	display: flex;
+	width: 75%;
+	height: 100%;
+	flex-flow: column;
+}
+.blackText{
+	color: black;
+}
+.titleTextInsideRightItem{
+	display: flex;
+	color: $textGreyColor;
+	width: 80%;
+	margin: 10px 10px 4px 10px;
+}
+.dateTextInsideRightItem{
+	display: flex;
+	font-family: $textFont;
+	color:$dateColor;
+	width: 80%;
+	margin: 0px 0px 0px 10px;
+}
+.descriptionTextInsideRightItem{
+	display: flex;
+	color:$textGreyColor;
+	font-family: $textFont;
+	width: 80%;
+	margin: 20px 10px 20px 10px;
+}
+.btn{
+	cursor: pointer;
+	margin-left: 10px;
+	display: flex;
+	width:150px;
+	height: 30px;
+	border: none;
+	border-radius: 3px;
+	padding-left: 45px;
+	color: #ebebeb;
+	background: #81bcdb; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#81bcdb, #3e6b81); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#81bcdb, #3e6b81); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#81bcdb, #3e6b81); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#81bcdb, #3e6b81);
+	box-shadow: 0px 1px 2px black;
+}
+.btn:active{
+	background: #4e8dae; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#4e8dae, #31576a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4e8dae, #31576a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4e8dae, #31576a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4e8dae, #31576a);
+	box-shadow: none;
+}
+.btn:focus{
+	outline:none;
+}
+.itemImage{
+	display: flex;
+	max-width: 90%;
+	max-height: 90%;
+}
+.line{
+	display: flex;
+	height: 1px;
+	width: 100%;
+	background: #4e8dae; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,white, #dddddd, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right,white, #dddddd, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right,white, #dddddd, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, white, #dddddd, white);
+}
+.thirdMenu{
+	display: flex;
+	width:100%;
+	height: 50px;
+	background: white;
+	justify-content: center;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #4e8dae;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.fourthMenu{
+	display: flex;
+	width:100%;
+	height: 700px;
+	justify-content: center;
+}
+.fourthFirst{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	height: 100px;
+}
+.fourthSecond{
+	display: flex;
+	width:100%;
+	height: 500px;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+.fourthItemClass{
+	display: flex;
+	height: 120px;
+	width: 200px;
+	margin: 10px 10px 10px 10px;
+	border-radius: 8px;
+	justify-content: center;
+	align-items: center;
+	background: #f0f0f0;
+}
+.column{
+	flex-flow: column!important;
+}
+.noJust{
+	justify-content: flex-start!important;
+}
+.logoImage{
+	display: flex;
+	width:90%;
+	height: 85%;
+	border-radius: 5px;
+	cursor: pointer;
+}
+footer{
+	display: flex;
+	height:450px;
+	width:100%;
+	background: #0f0f0f;
+	justify-content: center;
+}
+.footerLeft{
+	display: flex;
+	width: 35%;
+	height: 100%;
+	flex-flow: column;
+	align-content: flex-start;
+	align-items: center;
+}
+.footerMiddle{
+	display: flex;
+	width: 35%;
+	height: 100%;
+	flex-flow: column;
+	align-content: flex-start;
+	align-items: center;
+}
+.footerRight{
+	display: flex;
+	width: 30%;
+	height: 100%;
+	flex-flow: column;
+	align-content: flex-start;
+	padding-left: 50px;
+}
+.footerImage{
+	display: flex;
+	width:auto;
+	height: auto;
+	border-radius: 5px;
+	margin: 5px 5px 5px 5px
+}
+.footerMidWidth{
+	width:70%!important;
+}
+
+
+
+
+
+h1{
+	font-family: $textFont;
+	color: $textColor;
+	font-size: 50px;
+	margin:0;
+	letter-spacing: 2px;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+h2{
+	font-family: $textFont;
+	color: $textColor;
+	margin:0;
+	letter-spacing: 5px;
+}
+h3{
+	color:$textColor;
+	font-family: $textFont;
+	letter-spacing: 2px;
+}
+h4.navClass{
+	height: 20px;
+	cursor: pointer;
+	color:$textColor;
+	font-family: $textFont;
+	letter-spacing: 2px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+h4.navClass:active{
+	color: black;
+}
+h5{
+	margin: 15px;
+	font-size: 45px;
+	letter-spacing: 2px;
+	color:white;
+	font-family: $textFont;
+}
